@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1748e7c8-b396-4121-81aa-d76252550035" name="Default" comment="add file">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/javalearn/app/model/ContactType.java" />
+    <list default="true" id="1748e7c8-b396-4121-81aa-d76252550035" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/javalearn/app/model/Contact.java" afterPath="$PROJECT_DIR$/src/edu/javalearn/app/model/Contact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/javalearn/app/model/Resume.java" afterPath="$PROJECT_DIR$/src/edu/javalearn/app/model/Resume.java" />
     </list>
     <ignored path="Webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -808,7 +805,7 @@
       <updated>1472034260278</updated>
       <workItem from="1472034278933" duration="12536000" />
       <workItem from="1472111755554" duration="12970000" />
-      <workItem from="1472193163748" duration="2838000" />
+      <workItem from="1472193163748" duration="3039000" />
     </task>
     <task id="LOCAL-00001" summary="add file">
       <created>1472036513603</created>
@@ -817,11 +814,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472036513655</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Webapp java project">
+      <created>1472201707323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1472201707324</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28344000" />
+    <option name="totallyTimeSpent" value="28545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -896,7 +900,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add file" />
+    <MESSAGE value="Webapp java project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webapp java project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

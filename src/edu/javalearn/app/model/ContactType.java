@@ -6,10 +6,20 @@ package edu.javalearn.app.model;
  * Webapp
  */
 public enum ContactType {
-    PHONE,
-    MOBILE,
-    HOME_PHONE,
-    SKYPE,
-    MAIL,
-    QQ
+    PHONE("Phone"),
+    MOBILE("Mobile phone"),
+    HOME_PHONE("Home phone"),
+    SKYPE("Skype"),
+    MAIL("Mail"),
+    QQ("QQ");
+
+    private String title;
+
+    ContactType(String title){
+        this.title=title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 }

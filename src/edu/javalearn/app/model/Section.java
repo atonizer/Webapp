@@ -6,7 +6,7 @@ package edu.javalearn.app.model;
  * Webapp
  */
 public class Section {
-    SectionType type;
+    protected SectionType type;
 
 }
 

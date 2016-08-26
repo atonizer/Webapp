@@ -6,7 +6,7 @@ package edu.javalearn.app.model;
  * Webapp
  */
 public class Section {
-    String type;
+    SectionType type;
 
 }
 

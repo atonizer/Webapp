@@ -7,7 +7,7 @@ import edu.javalearn.app.model.Resume;
  * for Webapp
  * on 8/27/16.
  */
-public class WebAppException extends Exception {
+public class WebAppException extends RuntimeException {
     private Resume resume = null;
     private String uuid = null;
 

@@ -17,11 +17,18 @@ import static org.junit.Assert.*;
  *
  */
 public class ArrayStorageTest {
-    private static Resume R1, R2, R3;
+    private Resume R1, R2, R3;
 
     private ArrayStorage storage = new ArrayStorage();
 
-    static {
+    @BeforeClass
+    public static void beforeClass(){
+        // the same as static {}
+    }
+
+    @Before
+    public void before(){
+
         R1 = new Resume("Full name1", "location");
         R1.addContact(new Contact(ContactType.MAIL, "mail@mail.com"));
         R1.addContact(new Contact(ContactType.PHONE, "1234567"));
@@ -31,24 +38,10 @@ public class ArrayStorageTest {
         R2.addContact(new Contact(ContactType.PHONE, "89101112"));
 
         R3 = new Resume("Full name3", null);
-    }
-
-    @BeforeClass
-    public static void beforeClass(){
-        // the same as static {}
-    }
-
-    @Before
-    public void before(){
         storage.clear();
+        storage.save(R3);
         storage.save(R1);
         storage.save(R2);
-        storage.save(R3);
-    }
-
-    @org.junit.Test
-    public void clear() throws Exception {
-
     }
 
     @org.junit.Test
@@ -57,13 +50,23 @@ public class ArrayStorageTest {
     }
 
     @org.junit.Test
-    public void update() throws Exception {
+    public void clear() throws Exception {
+        storage.clear();
+        assertEquals(0,storage.size());
+    }
 
+    @org.junit.Test
+    public void update() throws Exception {
+        R2.setFullName("Updated N2");
+        storage.update(R2);
+        assertEquals(R2, storage.load(R2.getUuid()));
     }
 
     @org.junit.Test
     public void load() throws Exception {
-
+        assertEquals(R1, storage.load(R1.getUuid()));
+        assertEquals(R2, storage.load(R2.getUuid()));
+        assertEquals(R3, storage.load(R3.getUuid()));
     }
 
     @org.junit.Test
@@ -75,7 +78,8 @@ public class ArrayStorageTest {
 
     @org.junit.Test
     public void getAllSorted() throws Exception {
-
+        Resume[] src = new Resume[]{R1, R2, R3};
+        Arrays.sort(src);
     }
 
     @org.junit.Test

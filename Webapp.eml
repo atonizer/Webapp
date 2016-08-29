@@ -6,4 +6,7 @@
 		<testFolder url="file://$MODULE_DIR$/test"/>
 		<excludeFolder url="file://$MODULE_DIR$/target"/>
 	</contentEntry>
+	<levels>
+		<level name="src" value="project"/>
+	</levels>
 </component>
